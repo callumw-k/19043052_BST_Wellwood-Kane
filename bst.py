@@ -57,7 +57,6 @@ class BSTMap:
         elif min > subtree.key:
             return self._bstSearchList(subtree.right, min, max)
         else:
-            print('yeet')
             self.node_list.append(subtree.value)
             return self._bstSearchList(self._root, (min + 1), max)
 
